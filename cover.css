@@ -111,6 +111,7 @@ body {
 
 .cover {
   padding: 0 20px;
+ 
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -160,4 +161,8 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+.hide {
+
+  visibility: hidden;
 }
