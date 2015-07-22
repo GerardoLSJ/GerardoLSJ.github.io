@@ -18,16 +18,20 @@ $(document).ready(function(){
 
 	$("#feat").click(function(){
        $( "#home" ).addClass('animated bounceOutLeft').one(animateEnd, function(){
-
+       			
        			$( "#cont" ).removeClass("hide").addClass('animated bounceInLeft');	
+       			$( "#home" ).removeClass("animated bounceOutLeft").addClass('hide');
        		});
        });
     
 
 
     $("#navhome").click(function(){
-       $( "#home" ).css( "display", "block" );
-    });
+        $( "#cont" ).addClass('animated bounceOutLeft').one(animateEnd, function(){
+        		$( "#cont" ).removeClass("animated bounceOutLeft").addClass('hide');
+       			$( "#home" ).removeClass("hide").addClass('animated bounceInLeft');	
+       		});
+       });
    
    
 // 
