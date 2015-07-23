@@ -17,19 +17,22 @@ $(document).ready(function(){
 */ var animateEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 	$("#feat").click(function(){
-       $( "#home" ).addClass('animated bounceOutLeft').one(animateEnd, function(){
+       $( "#home" ).addClass('animated fadeOut').one(animateEnd, function(){
+       			$( "#home" ).removeClass("animated fadeOut").addClass('hide');
+       			$( "#cont" ).removeClass("hide").addClass('animated fadeIn');
+       			$( "#home" ).removeClass('animated fadeIn');		
        			
-       			$( "#cont" ).removeClass("hide").addClass('animated bounceInLeft');	
-       			$( "#home" ).removeClass("animated bounceOutLeft").addClass('hide');
        		});
        });
     
 
 
     $("#navhome").click(function(){
-        $( "#cont" ).addClass('animated bounceOutLeft').one(animateEnd, function(){
-        		$( "#cont" ).removeClass("animated bounceOutLeft").addClass('hide');
-       			$( "#home" ).removeClass("hide").addClass('animated bounceInLeft');	
+        $( "#cont" ).addClass('animated fadeOut').one(animateEnd, function(){
+        		$( "#cont" ).removeClass("animated fadeOut").addClass('hide');
+       			$( "#home" ).removeClass("hide").addClass('animated fadeIn');	
+       			$( "#cont" ).removeClass('animated fadeIn');
+       			
        		});
        });
    
@@ -39,3 +42,22 @@ $(document).ready(function(){
 
 
 });
+
+function reflectString(inputString) {
+  
+  var result = '';
+  for (var i = 0; i < inputString.length; i++) {
+    var order = inputString.charCodeAt(i) - 'a'.charCodeAt(0),
+        reflectedCharCode = 'a'.charCodeAt(0) + 25 - order;
+    result += String.fromCharCode(reflectedCharCode);
+  }
+
+  return result;
+}
+
+
+function mixedFractionToImproper(A) {
+
+    var B = [A[1] + A[0] * A[2], A[2]];
+  return B;
+}
