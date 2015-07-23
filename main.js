@@ -17,26 +17,20 @@ $(document).ready(function(){
 */ var animateEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 	$("#feat").click(function(){
-       $( "#home" ).addClass('animated fadeOut').one(animateEnd, function(){
-       			$( "#home" ).removeClass("animated fadeOut").addClass('hide');
-       			$( "#cont" ).removeClass("hide").addClass('animated fadeIn');
-       			$( "#home" ).removeClass('animated fadeIn');		
-       			
-       		});
+       $( "#home" ).addClass('animated fadeOut');
+       	$( "#home" ).removeClass("animated fadeOut").addClass('hide');
+       	$( "#cont" ).removeClass("hide").addClass('animated fadeIn');
+       	$( "#home" ).removeClass('animated fadeIn');	
        });
     
 
 
     $("#navhome").click(function(){
-        $( "#cont" ).addClass('animated fadeOut').one(animateEnd, function(){
-        		$( "#cont" ).removeClass("animated fadeOut").addClass('hide');
-       			$( "#home" ).removeClass("hide").addClass('animated fadeIn');	
-       			$( "#cont" ).removeClass('animated fadeIn');
-       			
-       		});
+        $( "#cont" ).addClass('animated fadeOut');
+       		$( "#cont" ).removeClass("animated fadeOut").addClass('hide');
+   			$( "#home" ).removeClass("hide").addClass('animated fadeIn');	
+   			$( "#cont" ).removeClass('animated fadeIn');
        });
-   
-   
 // 
 
 
