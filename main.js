@@ -24,7 +24,7 @@ $(document).ready(function () {
         $("#navhome").addClass('active');
     });
     
-
+ 			//cd gerardolsj.github.io
 
 
 });
