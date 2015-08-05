@@ -26,5 +26,9 @@ $(document).ready(function () {
     
  			//cd gerardolsj.github.io
 
+ 			//templates
 
+ 	 
+     $("#includedContent").load("b.html"); 
+    	
 });
