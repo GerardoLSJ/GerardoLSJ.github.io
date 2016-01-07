@@ -1,235 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<title>MyWay</title>
-	<meta charset = "utf-8">
-
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<link href="css/signin.css" rel="stylesheet">
-
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	 <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-	<script src="js/maps.js"></script>
-
-	 <link rel="stylesheet" type="text/css" href="css/DateTimePicker.css" />
- 	<script type="text/javascript" src="js/DateTimePicker.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>GerardoLSJ and fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="GerardoLSJ Gerardo Lopez Santibañez Jimenez fullpage" />
+	<meta name="Resource-type" content="Document" />
 
 
-
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 
 	
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 
+ 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	
 
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['', '#1BBC9B', '#7E8F7C'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+				scrollBar:true
+			});
+		});
+	</script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
 </head>
 <body>
-	<div class="container-fluid">
-		 <div id="map"></div>
-		 <!--<div id="getLocation" onclick="getLocation()"></div>-->
-		 <div style="overflow:hidden;" id="calendar">
-		 	 <p>Agendar viaje: </p>
- 			<input type="text" data-field="datetime" id="calendarContainer" readonly>
- 			 <div id="dtBox"></div>
+
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+
+		 <h1 class="wow bounceInUp">Gerardo LSJ </h1>
+		 <p class="wow fadeInRight blanco" data-wow-delay="1.6s">Free Code Camp Ziplines</P>
+		 	<p></P>
+		 	 <div class="btn-group ">
+         		<a href="http://fb.com/gerardolsj" class="btn btn-fb btn-lg wow fadeIn" data-wow-delay="0.5s"><i class="fa fa-facebook"></i> Facebook</a>
+          		 <a href="https://twitter.com/GerardoLSJ" class="btn btn-default btn-lg wow fadeIn" data-wow-delay="0.9s"><i class="fa fa-twitter"></i> Twitter</a>
+        		 <a href="https://github.com/GerardoLSJ" class="btn btn-git btn-lg wow fadeIn" data-wow-delay="1.3s"><i class="fa fa-github"></i> GitHub</a>
+       		 </div>
+
+       		
+
 		</div>
+	</div>
+	<div class="section " id="section1">
+	    <div class="slide " id="slide1">
+			<div class="intro ">
+				
+			<div class="row-fluid ">
+				<h1 class="wow fadeInDown">Portafolio</h1>
+				<div class="col-xs-4 wow fadeInDown " data-wow-delay="0.2s">
+				  <img class="photo" src="imgs/my.png" alt="Generic placeholder image">
+				  <h3>MyWay</h3>
+				  <p class="lead">A carpool aplication that let you save between 50% to 75% of you ride.  </p>
+				  <p class="lead">It was made at the MxHacksIII in Mexico City</p>
+				  <a href="#" class="btn btn-default btn-lg wow fadeIn" data-wow-delay="2s"><i class="fa fa-paper-plane-o"></i> See More</a>
+				 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-xs-4 wow fadeInDown" data-wow-delay="0.4s">
+				  <img  class="photo" src="imgs/dem.png" alt="Generic placeholder image">
+				   <h3>DEM</h3>
+				   <p class="lead">A plataform aimed to students to save money, pay debst and buy whatever they want.</p>
+				   <p class="lead">It was made at the MxHacks FinTech Edition in Mexico City</p>
+				    <a href="#" class="btn btn-default btn-lg wow fadeIn" data-wow-delay="2s"><i class="fa fa-paper-plane-o"></i> See More</a>
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-xs-4 wow fadeInDown" data-wow-delay="0.6s">
+				  <img  class="photo" src="imgs/sigue.png" alt="Generic placeholder image">
+				   <h3>Sigue la Huella</h3>
+				 <p class="lead">A site where you can find you lost mascot and help others tu fond theirs. </p>
+				   <p class="lead">It was made at the Hackamano by SegundaMano FinTech Edition in Mexico City</p>
+				    <a href="#" class="btn btn-default btn-lg wow fadeIn" data-wow-delay="2s"><i class="fa fa-paper-plane-o"></i> See More</a>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
 
 
 
-
-		<div id = "payContainer">
-			<div id="payInfo">
-				<div id="aBordo"><h3>Personas a bordo:</h3> 
-				<a href="https://www.facebook.com/andre.escajeda"><img class="right floated mini ui image profileImg" src="assets/09.png" style="max-width: 80px; max-height: 80px;"></a> &nbsp; André  <br>
-
-				<a href="https://instagram.com/paumeaow/"><img class="right floated mini ui image profileImg" src="assets/10.png" style="max-width: 80px;
-	max-height: 80px;"></a> &nbsp; Paulina <br>
-
-
-				<a href="https://twitter.com/seebas_silva"><img class="right floated mini ui image profileImg" src="assets/11.png" style="max-width: 80px;
-	max-height: 80px;"></a> &nbsp; Sebastián <br>
-
-				<a href = "https://www.linkedin.com/"><img class="right floated mini ui image profileImg" src="assets/12.png" style="max-width: 80px;
-	max-height: 80px;"></a> &nbsp; Ana <br>
-
-				</div>
-				<div id="payTotal"><p> Costo del viaje: $400 </p></div>
-				<div id="payAhorro"><p> Ahorro por usuario: $270</p></div>
-				<div id="payUser"><p>Costo total por usuario: $130</p></div>
 			</div>
 		</div>
 
-<!------UI CARDS---- -->
-<div class="ui cards" style="width:304px; height:100%; overflow:hidden; position:absolute; top:0px; background-color:#fff; display:none; " id = "contactos">
-	<!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
-<div class = "scrollable">
-		<br>
-	  <div class="card">
-	    <div class="content">
-	      <img class="right floated mini ui image" src="assets/04.png" style="max-width: 80px;
-	max-height: 80px;" href="https://instagram.com/paumeaow/">
-			<div class = "dText">
-		      <div class="header">
-		        Paulina 
-		      </div>
-		      <div class="meta">
-		       Amiga de Jessica Herrera <br> <b>A 150m</b>
+	    <div class="slide intro " id="slide2">
+			
 
-		      </div>
-		      <div class="description">
-		        ¿Nos vamos juntos?
-		      </div>
-	      </div>
-	    </div>
-	    <div class="extra content">
-	      <div class="ui two buttons">
-	        <div class="btn btn-default goWith">Ir con ella</div>
-	        <div class="btn btn-default danger">Descartar</div>
-	      </div>
-	    </div>
-	  </div>
-	 <br><hr>
+<div class="row-fluid ">
+					<h1>Portafolio 	</h1>
 
+				<div class="col-xs-4 fadeInDown " data-wow-delay="0.6s">
+					<img class="rotate" src="imgs/icon/tweet.svg" alt="Generic placeholder image">
+				  <h3>Another amazing project!</h3>
+				  <p >Still waiting to be discover, maybe another Hackathon, maybe another Zipline</p>
 
+				  
+				</div><!-- /.col-lg-4 -->
 
+				<div class="col-xs-4 ">
+				  <img  class="rotate" src="imgs/icon/picture.svg" alt="Generic placeholder image">
+				   <h3>Another amazing project!</h3>
+				  <p >Still waiting to be discover, maybe another Hackathon, maybe another Zipline</p>
+				</div><!-- /.col-lg-4 -->
+				
 
-	  <div class="card">
-	    <div class="content">
-	      <img class="right floated mini ui image" src="assets/03.png" style="max-width: 80px; max-height: 80px;" href="https://twitter.com/seebas_silva">
-	      <div class = "dText">
-		      <div class="header">
-		        Sebastián
-		      </div>
-		      <div class="meta">
-		       Amigo de Angel Herrera <br> <b>A 250m</b>
+				<div class="col-xs-4">
+				 <img  class="rotate" src="imgs/icon/retina.svg" alt="Generic placeholder image">
 
-		      </div>
-		      <div class="description">
-		        ¿Jalas?
-		      </div>
-		    </div>
-	    </div>
-	    <div class="extra content">
-	      <div class="ui two buttons">
-	        <div class="btn btn-default ">Ir con él</div>
-	        <div class="btn btn-default danger discard">Descartar</div>
-	      </div>
-	    </div>
-	  </div>
-	  <br><hr>
+				  <h3>Another amazing project!</h3>
+				  <p >Still waiting to be discover, maybe another Hackathon, maybe another Zipline</p>
 
-	<!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
+				  
+				</div><!-- /.col-lg-4 -->
 
-	  <div class="card">
-	    <div class="content ">
-	      <img class="right floated mini ui image" src="assets/01.png" style="max-width: 80px; max-height: 80px;" href="https://www.facebook.com/andre.escajeda">
-	      <div class = "dText">
-		      <div class="header">
-		        Andre Escajeda
-		      </div>
-		      <div class="meta">
-		        Amigo de Sebas Silva <br> <b>A 100m</b>
-		      </div>
-		      <div class="description verify">
-		        Quiere irse contigo 
-		      </div>
-		    </div>
-	    </div>
-	    <div class="extra content">
-	      <div class="ui two buttons">
-	      <div class="btn btn-default goWith">Ir con él</div>
-	        <div id="danger" class="btn btn-default danger discard">Descartar</div>
-
-							<script>
-							$( ".btn" ).click(function() {
-							  $( this ).toggleClass( ".hide" );
-							});
-							</script>
-	      </div>
-	    </div>
-	  </div>	  <br><hr>
-
-
-	   <!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
-	  <div class="card">
-	    <div class="content">
-	      <img class="right floated mini ui image" src="assets/06.png" style="max-width: 80px; max-height: 80px;">
-	      <div class = "dText">
-		      <div class="header">
-		        Ana 
-		      </div>
-		      <div class="meta">
-		       Amiga de Aranza Garcia <br> <b>A 150m</b>
-
-		      </div>
-		      <div class="description">
-		        ¿Nos vamos juntos?
-		      </div>
-		    </div>
-	    </div>
-	    <div class="extra content">
-	      <div class="ui two buttons">
-	        <div class="btn btn-default goWith">Ir con ella</div>
-	        <div class="btn btn-default danger discard">Descartar</div>
-	      </div>
-	    </div>
-	  </div>
-	  <br><hr>
-
-
-	<!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
-
-	  <!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
-	  <div class="card">
-	    <div class="content">
-	      <img class="right floated mini ui image" src="assets/02.png" style="max-width: 80px; max-height: 80px;">
-	      <div class = "dText">
-		      <div class="header">
-		        Gerry 
-		      </div>
-		      <div class="meta">
-		       Amigo de Raul Perez <br> <b>A 300m</b>
-
-		      </div>
-		      <div class="description">
-		        Vamonos juntos
-		      </div>
-		    </div>
-	    </div>
-	    <div class="extra content">
-	      <div class="ui two buttons">
-	        <div class="btn btn-default goWith">Ir con él</div>
-	        <div class="btn btn-default danger discard">Descartar</div>
-	      </div>
-	    </div>
-	  </div>
-
-	  <br><hr>
-
-	<!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
-
-	  
-
-</div>
-<!--      asdasdasdasdsadasdsadsdsdsdsdsdsadasdasdsdasndbsahdgshfgasdgashjdgakhjsgdhjasgd    -->
-</div>
-
-
-
+			</div><!-- /.row -->
+			
+		</div>
 
 	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+
+			<div class="row-fluid">
+				<div class="col-xs-8 wow fadeInDown " data-wow-delay="0.2s">
+				 
+					<a class="twitter-timeline" href="https://twitter.com/GerardoLSJ" data-widget-id="685195060678295552">Tweets por el @GerardoLSJ.</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+
+
+
+				</div><!-- /.col-lg-4 -->
+				 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				
+				
+				<div class="col-xs-4 wow fadeInDown" data-wow-delay="0.6s">
+				  
+					<img class="rotate" src="imgs/icon/laptop.svg" alt="Generic placeholder image">
+				  <h3>@GerardoLSJ</h3>
+				  <p class="lead">I'm a computer engineer student.</p>
+				  <p class="lead">I live in Mexico City</p>
+				  <p class="lead">I am very interested in all the MEAN stack that is why I am at FreeCodeCamp.</p>
+				   <p class="lead">I love Hackathons and if you too please send a message.</p>
+
+
+
+
+				
+			</div><!-- /.row -->
+		</div>
+	</div>
+</div>
+
+
 </body>
-<script type="text/javascript">
-	 $(document).ready(function()
- {
-   
-     $("#dtBox").DateTimePicker();
-   
- });
-</script>
 </html>

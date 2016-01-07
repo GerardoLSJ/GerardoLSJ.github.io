@@ -1,0 +1,240 @@
+body ,p, h1,h3{
+	padding: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.btn {
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 10px;
+    padding-top: 10px;
+    }
+
+.btn-default , .btn-git ,.btn-fb {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #727272;
+    outline: 0;
+    color: #FFF;
+    background-color: #0288D1;
+}
+.btn-fb:hover,
+.btn-fb:focus {
+    border: 1px solid #727272;
+    outline: 0;
+    color: #FFF;
+    background-color: #303F9F;
+}
+.btn-git:hover,
+.btn-git:focus {
+    border: 1px solid #727272;
+    outline: 0;
+    color: #FFF;
+    background-color: #727272;
+}
+.col-xs-4
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+}
+.intro p,h3 {
+     width: 85%; 
+     margin: 0 auto; 
+    font-size: 1.2em; 
+    color: white;
+    
+}
+
+
+
+/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+	background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/5D32YBOFBF.jpg);
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #455A64;  
+	}
+	#section2{
+background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/H9VZ3EATH3.jpg);
+
+  background-size: cover;
+ 
+	}
+
+
+
+		#slide1{
+		background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/IW1IXLIOY5.jpg);
+		background-size: cover;
+		
+	}
+		#slide2{
+		background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/3ZHG0M8SPY.jpg);
+		background-size: cover;
+	
+	}
+	
+h1,p{
+	text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+ 
+
+.photo{
+	max-width: 150px;
+	border-radius: 100%;
+}
+h3 {
+	font-family: Raleway;
+	font-size: 30px;
+	font-style: oblique;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 55.4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		color: #fff;
+		margin:0;
+	}
+	
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+
+	}
+
+	.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
