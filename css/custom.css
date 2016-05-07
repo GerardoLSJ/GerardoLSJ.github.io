@@ -238,3 +238,9 @@ h3 {
         transform: scale(1);
     }
 }
+
+@media (max-width: 600px) {
+  .mobile {
+    display: inline-block;
+  }
+}
