@@ -30,7 +30,7 @@ body ,p, h1,h3{
     border: 1px solid #727272;
     outline: 0;
     color: #FFF;
-    background-color: rgb(40, 123, 188);
+    background-color: rgb(27, 84, 128);
 }
 .btn-git:hover,
 .btn-git:focus {
