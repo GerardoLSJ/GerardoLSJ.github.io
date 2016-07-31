@@ -14,7 +14,7 @@
       }
     </style>
 
-	
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="test">
@@ -342,7 +342,6 @@
 		<div class="container text-center">
 			<h2>Mapa</h2>
 			<div id="map"></div>
-			<div id="map-canvas"></div>
 		</div>
 	</div>
 	
@@ -477,16 +476,49 @@
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script> 
 
-	<!-- MAP -->
+	<!-- MAP 26.900486, -101.433941 
+	, -101.433826-->
 
   <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
-            zoom: 8
+            center: {lat: 26.900486, lng: -101.433941},
+            zoom: 16
         });
+
+		    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+    var image = 'http://i.imgur.com/jRfjvrz.png';
+    var myLatLng = new google.maps.LatLng(26.900481, -101.433826);
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+		 title: 'Centro de bienestar integral',
+		 animation: google.maps.Animation.DROP
+    });
+
+	 var contentString = '<div id="content"> '+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">YOGA Irasema</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Brasil</b>,#999 ' +
+      'Telefono, colonia etc.'+
+      '</div>';
+
+	  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+	marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+
+
       }
+
+
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBglznyGleAZP1rHiIu3b9J3GK7cfThnsI&callback=initMap">
